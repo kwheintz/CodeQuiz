@@ -4,6 +4,7 @@
 // -------------GLOBAL VARS-----------------
 
 var currentScore = 0;
+var i=0;
 
 // -------------QUESTIONS-------------------
 var questions = [
@@ -63,53 +64,57 @@ $(document).ready(function() {
         $("#quiz-texttwo").append("<button class='btn btn-secondary btn-lg btn-block' id='answerb'></button>");
         $("#quiz-texttwo").append("<button class='btn btn-secondary btn-lg btn-block' id='answerc'></button>");
         $("#quiz-texttwo").append("<button class='btn btn-secondary btn-lg btn-block' id='answerd'></button>");
+        $("#quiz-text").text(questions[i].title);
+        $("#answera").text(questions[i].choices[0]);
+        $("#answerb").text(questions[i].choices[1]);
+        $("#answerc").text(questions[i].choices[2]);
+        $("#answerd").text(questions[i].choices[3]);
         
-        for(var i=0; i<questions.length; i++) {
-            $("#quiz-text").text(questions[i].title);
-            $("#answera").text(questions[i].choices[0]);
-            $("#answerb").text(questions[i].choices[1]);
-            $("#answerc").text(questions[i].choices[2]);
-            $("#answerd").text(questions[i].choices[3]);
-        
-            choicea = questions[i].choices[0];
-            choiceb = questions[i].choices[1];
-            choicec = questions[i].choices[2];
-            choiced = questions[i].choices[3];
-            finalAnswer = questions[i].answer;
+        choicea = questions[i].choices[0];
+        choiceb = questions[i].choices[1];
+        choicec = questions[i].choices[2];
+        choiced = questions[i].choices[3];
+        finalAnswer = questions[i].answer;
 
-            $("#answera").on("click", function() {
-                if(choicea===finalAnswer) {
-                    alert("Correct!");
-                }   
-                else {
-                    alert("Incorrect!");
-                }
-            });
-            $("#answerb").on("click", function() {
-                if(choiceb===finalAnswer) {
-                    alert("Correct!");
-                }   
-                else {
-                    alert("Incorrect!");
-                }
-            });
-            $("#answerc").on("click", function() {
-                if(choicec===finalAnswer) {
-                    alert("Correct!");          
-                }
-                else {
-                    alert("Incorrect!");              
-                }
-            });
-            $("#answerd").on("click", function() {
-                if(choiced===finalAnswer) {
-                    alert("Correct!");
-                }  
-                else {
-                    alert("Incorrect!");
-                } 
-            });
-        }        
+        $("#answera").on("click", function() {
+            if(choicea===finalAnswer) {
+                alert("Correct!");
+                i++;
+            }   
+            else {
+                alert("Incorrect!");
+                i++;
+            }
+        });
+        $("#answerb").on("click", function() {
+            if(choiceb===finalAnswer) {
+                alert("Correct!");
+                i++;
+            }   
+            else {
+                alert("Incorrect!");                    i++;
+            }
+        });
+        $("#answerc").on("click", function() {
+            if(choicec===finalAnswer) {
+                alert("Correct!");
+                i++;          
+            }
+            else {
+                alert("Incorrect!");
+                i++;             
+            }
+        });
+        $("#answerd").on("click", function() {
+            if(choiced===finalAnswer) {
+                alert("Correct!");
+                i++;
+            }  
+            else {
+                alert("Incorrect!");
+                i++;
+            } 
+        });      
     });     
 });
 
