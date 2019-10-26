@@ -1,0 +1,80 @@
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: indigo;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    background: indigo;
+    color: gold;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 44px;
+    text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer {
+    width: 100%;
+    background: gold;
+    color: indigo;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 44px;
+    text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.quiz-title {
+    color: gold;   
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 32px;
+    text-shadow: -1px 1px 0 black, 1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+
+}
+
+#quiz-text {
+    color: gold;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;   
+}
+
+#answera {
+    background-color: gold;
+    color: indigo;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: black"
+}
+
+#answerb {
+    background-color: gold;
+    color: indigo;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: black"
+}
+
+#answerc {
+    background-color: gold;
+    color: indigo;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: black"
+}
+
+#answerd {
+    background-color: gold;
+    color: indigo;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-color: black"
+}
